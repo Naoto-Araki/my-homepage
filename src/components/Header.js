@@ -19,7 +19,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-md py-4 px-6">
+    <header className="bg-gray-800 shadow-md py-4 px-6">
       <div className="container mx-auto">
         {/* ハンバーガーメニューボタン（モバイル用） */}
         <div className="md:hidden flex justify-start">
@@ -50,7 +50,7 @@ const Header = () => {
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
             <Link
               to="/"
-              className="text-gray-700 font-semibold hover:text-blue-600 transition-colors duration-200"
+              className="text-white font-semibold hover:text-blue-600 transition-colors duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
@@ -58,21 +58,21 @@ const Header = () => {
             <a
               href="#about"
               onClick={scrollToAbout}
-              className="text-gray-700 font-semibold hover:text-blue-600 transition-colors duration-200 cursor-pointer"
+              className="text-white font-semibold hover:text-blue-600 transition-colors duration-200 cursor-pointer"
             >
               About me
             </a>
             <a
               href="#projects"
               onClick={scrollToAbout}
-              className="text-gray-700 font-semibold hover:text-blue-600 transition-colors duration-200 cursor-pointer"
+              className="text-white font-semibold hover:text-blue-600 transition-colors duration-200 cursor-pointer"
             >
               Projects
             </a>
             <a
               href="#activities"
               onClick={scrollToAbout}
-              className="text-gray-700 font-semibold hover:text-blue-600 transition-colors duration-200 cursor-pointer"
+              className="text-white font-semibold hover:text-blue-600 transition-colors duration-200 cursor-pointer"
             >
               Activities
             </a>
