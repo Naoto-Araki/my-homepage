@@ -12,7 +12,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
       <div className="bg-white rounded-lg max-w-4xl w-full max-h-[100vh] overflow-y-auto">
         <div className="p-8 flex flex-col md:flex-row gap-8">
           {/* ───────── 左：画像 */}
-          <div className="md:w-1/3 flex-shrink-0 flex flex-col gap-4 justify-center">
+          <div className="md:w-1/3 flex-shrink-0 flex flex-col gap-8 justify-center">
             {project.images.map((src, idx) => (
               <img
                 key={idx}
