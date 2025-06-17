@@ -104,9 +104,9 @@ const Home = () => {
         <div className="bg-white rounded-lg shadow-md p-6">
           <p className="text-gray-600 leading-relaxed">
             はじめまして！<br/>
-            大阪大学大学院情報科学研究科 M1 Naoto-Araki です！<br/>
+            大阪大学大学院情報科学研究科 <br/>1回生 Naoto-Araki です！<br/>
             研究やエンジニア以外にも、<br/>
-            水泳、ゴルフ、釣り、音楽、ラーメン巡りなど、<br/>多趣味で色んなことをやってます！<br/>
+            水泳、ゴルフ、釣り、音楽、サウナなど、<br/>多趣味で色んなことをやってます！<br/>
             どうぞよろしくお願いします！
           </p>
         </div>
