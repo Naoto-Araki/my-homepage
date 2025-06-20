@@ -5,15 +5,11 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const scrollToAbout = (e) => {
+  const scrollToSection = (e, sectionId) => {
     e.preventDefault();
-    const aboutSection = document.getElementById('about');
-    const projectsSection = document.getElementById('projects');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
-    }
-    if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
     }
     setIsMenuOpen(false); // メニューを閉じる
   };
@@ -57,21 +53,21 @@ const Header = () => {
             </Link>
             <a
               href="#about"
-              onClick={scrollToAbout}
+              onClick={(e) => scrollToSection(e, 'about')}
               className="text-white font-semibold hover:text-blue-600 transition-colors duration-200 cursor-pointer"
             >
               About me
             </a>
             <a
               href="#projects"
-              onClick={scrollToAbout}
+              onClick={(e) => scrollToSection(e, 'projects')}
               className="text-white font-semibold hover:text-blue-600 transition-colors duration-200 cursor-pointer"
             >
               Projects
             </a>
             <a
               href="#activities"
-              onClick={scrollToAbout}
+              onClick={(e) => scrollToSection(e, 'activities')}
               className="text-white font-semibold hover:text-blue-600 transition-colors duration-200 cursor-pointer"
             >
               Activities
